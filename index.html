@@ -1,0 +1,931 @@
+<!--
+
+=========================================================
+* Volt Pro - Premium Bootstrap 5 Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-premium-bootstrap-5-dashboard
+* Copyright 2021 Themesberg (https://www.themesberg.com)
+* License (https://themesberg.com/licensing)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        (function (w, i, g) {
+            w[g] = w[g] || [];
+            if (typeof w[g].push == 'function') w[g].push(i)
+        })
+        (window, 'G-0VSYWXVH4F', 'google_tags_first_party');
+    </script>
+    <script async src="/vtn6/"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('set', 'developer_id.dYzg1YT', true);
+        gtag('config', 'G-0VSYWXVH4F');
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+
+    <title>
+        Sistem Penilaian Tugas Akhir - Dashboard | SiPeTA | Fakultas Informatika
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Sistem Penilaian Tugas Akhir (SiPeTA)">
+    <meta name="author" content="IKN">
+    <meta name="description" content="Sistem Penilaian Tugas Akhir (SiPeTA)">
+    <meta name="keywords" content="SiPeTA" />
+    <link rel="canonical" href="https://tugas-akhir-fif.herokuapp.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" href="https://tugas-akhir-fif.herokuapp.com/">
+    <meta property="og:title" content="Sistem Penilaian Tugas Akhir (SiPeTA)">
+    <meta property="og:description" content="Sistem Penilaian Tugas Akhir (SiPeTA)">
+    <meta property="og:image"
+        content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" href="https://tugas-akhir-fif.herokuapp.com/">
+    <meta property="twitter:title" content="Sistem Penilaian Tugas Akhir (SiPeTA)">
+    <meta property="twitter:description" content="Sistem Penilaian Tugas Akhir (SiPeTA)">
+    <meta property="twitter:image"
+        content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://apps-soc.telkomuniversity.ac.id/static/assets/img/favicon/favicon-telu.jpg">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://apps-soc.telkomuniversity.ac.id/static/assets/img/favicon/favicon-telu.jpg">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://apps-soc.telkomuniversity.ac.id/static/assets/img/favicon/favicon-telu.jpg">
+    <!-- <link rel="manifest" href="https://apps-soc.telkomuniversity.ac.id/static/assets/img/favicon/site.webmanifest"> -->
+    <link rel="mask-icon" href="https://apps-soc.telkomuniversity.ac.id/static/assets/img/favicon/safari-pinned-tab.svg"
+        color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link type="text/css"
+        href="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/sweetalert2/dist/sweetalert2.min.css"
+        rel="stylesheet">
+    <link type="text/css" href="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/notyf/notyf.min.css"
+        rel="stylesheet">
+    <link type="text/css" href="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/fullcalendar/main.min.css"
+        rel="stylesheet">
+    <link type="text/css"
+        href="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/apexcharts/dist/apexcharts.css"
+        rel="stylesheet">
+    <link type="text/css"
+        href="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/dropzone/dist/min/dropzone.min.css"
+        rel="stylesheet">
+    <link type="text/css"
+        href="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/choices.js/public/assets/styles/choices.min.css"
+        rel="stylesheet">
+    <link type="text/css" href="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/leaflet/dist/leaflet.css"
+        rel="stylesheet">
+    <link type="text/css" href="https://apps-soc.telkomuniversity.ac.id/static/assets/css/my_css.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+
+    <!-- Volt CSS -->
+    <link type="text/css" href="https://apps-soc.telkomuniversity.ac.id/static/assets/css/volt.min.css"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Specific Page CSS goes HERE  -->
+
+
+
+    <script data-cfasync="false" nonce="ff9eab66-c820-465b-858e-8fcc9993ce40">
+        try {
+            (function (w, d) {
+                ! function (j, k, l, m) {
+                    if (j.zaraz) console.error("zaraz is loaded twice");
+                    else {
+                        j[l] = j[l] || {};
+                        j[l].executed = [];
+                        j.zaraz = {
+                            deferred: [],
+                            listeners: []
+                        };
+                        j.zaraz._v = "5870";
+                        j.zaraz._n = "ff9eab66-c820-465b-858e-8fcc9993ce40";
+                        j.zaraz.q = [];
+                        j.zaraz._f = function (n) {
+                            return async function () {
+                                var o = Array.prototype.slice.call(arguments);
+                                j.zaraz.q.push({
+                                    m: n,
+                                    a: o
+                                })
+                            }
+                        };
+                        for (const p of ["track", "set", "ecommerce", "debug"]) j.zaraz[p] = j.zaraz._f(p);
+                        j.zaraz.init = () => {
+                            var q = k.getElementsByTagName(m)[0],
+                                r = k.createElement(m),
+                                s = k.getElementsByTagName("title")[0];
+                            s && (j[l].t = k.getElementsByTagName("title")[0].text);
+                            j[l].x = Math.random();
+                            j[l].w = j.screen.width;
+                            j[l].h = j.screen.height;
+                            j[l].j = j.innerHeight;
+                            j[l].e = j.innerWidth;
+                            j[l].l = j.location.href;
+                            j[l].r = k.referrer;
+                            j[l].k = j.screen.colorDepth;
+                            j[l].n = k.characterSet;
+                            j[l].o = (new Date).getTimezoneOffset();
+                            if (j.dataLayer)
+                                for (const t of Object.entries(Object.entries(dataLayer).reduce((u, v) => ({
+                                        ...u[1],
+                                        ...v[1]
+                                    }), {}))) zaraz.set(t[0], t[1], {
+                                    scope: "page"
+                                });
+                            j[l].q = [];
+                            for (; j.zaraz.q.length;) {
+                                const w = j.zaraz.q.shift();
+                                j[l].q.push(w)
+                            }
+                            r.defer = !0;
+                            for (const x of [localStorage, sessionStorage]) Object.keys(x || {}).filter(z => z
+                                .startsWith("_zaraz_")).forEach(y => {
+                                try {
+                                    j[l]["z_" + y.slice(7)] = JSON.parse(x.getItem(y))
+                                } catch {
+                                    j[l]["z_" + y.slice(7)] = x.getItem(y)
+                                }
+                            });
+                            r.referrerPolicy = "origin";
+                            r.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l])));
+                            q.parentNode.insertBefore(r, q)
+                        };
+                        ["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener(
+                            "DOMContentLoaded", zaraz.init)
+                    }
+                }(w, d, "zarazData", "script");
+                window.zaraz._p = async bs => new Promise(bt => {
+                    if (bs) {
+                        bs.e && bs.e.forEach(bu => {
+                            try {
+                                const bv = d.querySelector("script[nonce]"),
+                                    bw = bv ? .nonce || bv ? .getAttribute("nonce"),
+                                    bx = d.createElement("script");
+                                bw && (bx.nonce = bw);
+                                bx.innerHTML = bu;
+                                bx.onload = () => {
+                                    d.head.removeChild(bx)
+                                };
+                                d.head.appendChild(bx)
+                            } catch (by) {
+                                console.error(`Error executing script: ${bu}\n`, by)
+                            }
+                        });
+                        Promise.allSettled((bs.f || []).map(bz => fetch(bz[0], bz[1])))
+                    }
+                    bt()
+                });
+                zaraz._p({
+                    "e": ["(function(w,d){})(window,document)"]
+                });
+            })(window, document)
+        } catch (e) {
+            throw fetch("/cdn-cgi/zaraz/t"), e;
+        };
+    </script>
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+        <a class="navbar-brand me-lg-5" href="/">
+            <img class="navbar-brand-dark"
+                src="https://apps-soc.telkomuniversity.ac.id/static/assets/img/brand/light.svg" alt="Volt logo" /> <img
+                class="navbar-brand-light"
+                src="https://apps-soc.telkomuniversity.ac.id/static/assets/img/brand/dark.svg" alt="Volt logo" />
+        </a>
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+        <div class="sidebar-inner px-4 pt-3">
+            <div class="user-card d-flex d-md-none justify-content-between justify-content-md-center pb-4">
+                <div class="collapse-close d-md-none">
+                    <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                        aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+                        <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <ul class="nav flex-column pt-3 pt-md-0">
+                <li class="nav-item ">
+                    <a href="/" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon">
+                            <!-- <img src="https://apps-soc.telkomuniversity.ac.id/static/assets/img/brand/light.svg" height="20" width="20" alt="Volt Logo"> -->
+                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                            </svg>
+                        </span>
+                        <span class="mt-1 sidebar-text">Home</span>
+                    </a>
+                </li>
+                <!--  -->
+
+
+                <!--  -->
+
+
+
+
+
+                <li class="nav-item ">
+                    <a href="/sipeta/data-mhs-pbb" class="nav-link d-flex align-items-center justify-content-between">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Data Mahasiswa</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/sipeta/logbook-pbb" class="nav-link d-flex align-items-center justify-content-between">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Logbook TA</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                        data-bs-target="#submenu-dashboard-30">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Evaluasi</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse  " role="list" id="submenu-dashboard-30" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item ">
+                                <a href="/sipeta/evaluasi-kemajuan" class="nav-link">
+                                    <span class="sidebar-text-contracted">O</span>
+                                    <span class="sidebar-text">Kemajuan</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="/sipeta/evaluasi-prasidang" class="nav-link">
+                                    <span class="sidebar-text-contracted">O</span>
+                                    <span class="sidebar-text">Pra-Sidang</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="/sipeta/validasi-dosen-wali"
+                        class="nav-link d-flex align-items-center justify-content-between">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Validasi Dosen Wali</span>
+                        </span>
+                    </a>
+                </li>
+
+                <hr>
+
+                <li class="nav-item ">
+                    <a href="/sipeta/jadwal-sidang-dosen"
+                        class="nav-link d-flex align-items-center justify-content-between">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Jadwal Sidang</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item  active ">
+                    <a href="/sipeta/hasil-sidang-dosen"
+                        class="nav-link d-flex align-items-center justify-content-between">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Hasil Sidang</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/sipeta/seminar-internal-dosen"
+                        class="nav-link d-flex align-items-center justify-content-between">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Seminar Internal</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/sipeta/verifikasi-revisi-dosen"
+                        class="nav-link d-flex align-items-center justify-content-between">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Verifikasi Revisi</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                        data-bs-target="#submenu-dashboard-303">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">Sidang Yudisium</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse  " role="list" id="submenu-dashboard-303" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item ">
+                                <a href="/sipeta/sidang-yudisium-dosen" class="nav-link">
+                                    <span class="sidebar-text-contracted">O</span>
+                                    <span class="sidebar-text">Pembimbing TA</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="/sipeta/sidang-yudisium-wali" class="nav-link">
+                                    <span class="sidebar-text-contracted">O</span>
+                                    <span class="sidebar-text">Dosen Wali</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+
+
+
+                <hr>
+                <li class="nav-item ">
+                    <a href="/ganti-periode" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon">
+                            <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="mt-1 sidebar-text">Ganti Periode</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item ">
+                    <a href="/select-apps" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon">
+                            <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="mt-1 sidebar-text">Switch Apps</span>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="/tautan-penting" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon">
+                            <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="mt-1 sidebar-text">Tautan Penting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+
+
+        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark ps-0 pe-2 pb-0">
+            <div class="container-fluid px-0">
+                <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
+                    <div class="d-flex align-items-center">
+                        <button id="sidebar-toggle"
+                            class="sidebar-toggle me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
+                            <svg class="toggle-icon" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <span class="mt-1 sidebar-text">Sistem Penilaian Tugas Akhir | SiPeTA | Tahun Ajaran 2024/2025
+                            Semester Genap </span>
+                        <!-- / Search form -->
+                    </div>
+                    <!-- Navbar links -->
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item dropdown ms-lg-3">
+                            <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="media d-flex align-items-center">
+                                    <img class="avatar rounded-circle" alt="Image placeholder"
+                                        src="https://apps-soc.telkomuniversity.ac.id/static/assets/img/team/blank-pp.jpg">
+                                    <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
+                                        <span class="mb-0 font-small fw-bold text-gray-900">
+                                            MONTERICO ADRIAN
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+                                <a class="dropdown-item d-flex align-items-center" href="/logout">
+                                    <svg class="dropdown-icon text-danger me-2" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                                        </path>
+                                    </svg>
+                                    Logout
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--  -->
+        <div class="py-4">
+            <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+                <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                    <li class="breadcrumb-item">
+                        <a href="/">
+                            <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="/sipeta/hasil-sidang-dosen">Hasil
+                            Sidang</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">TEGAR FADILLAH ZANESTRI</li>
+                </ol>
+            </nav>
+        </div>
+        <!--  -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card border-0 shadow mb-4 p-0 p-md-4">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col" style="text-align: center;">
+                                <h2 class="fs-5 fw-bold mb-0">BERITA ACARA SIDANG TUGAS AKHIR</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            Pada hari ini, tanggal 15 Agustus 2025 Pukul 08.00 - 09.30 di ruang ONLINE telah
+                            dilaksanakan sidang TA mahasiswa Program Sarjana PROGRAM STUDI S1 PJJ INFORMATIKA (FIF) di
+                            Fakultas Informatika sebagai berikut:
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <div class="table-responsive" style="width: 40rem;">
+                                <table class="table table-centered mb-0 rounded">
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 16px;">NIM</td>
+                                            <td style="font-size: 16px;">1304211020</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 16px;">Nama Mahasiswa</td>
+                                            <td style="font-size: 16px;">TEGAR FADILLAH ZANESTRI</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 16px;">Judul TA</td>
+                                            <td style="font-size: 16px;">
+                                                <div class="text-wrap" style="width: 25rem;">Optimasi Performa Aplikasi
+                                                    Web Berbasis React Menggunakan Code Splitting dan Lazy Loading</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            Dewan penguji dengan penuh rasa tanggung jawab memutuskan bahwa mahasiswa tersebut di atas
+                            dinyatakan:
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <strong>Lulus Bersyarat</strong>
+                        </div>
+                        <div>
+                            Dengan nilai akhir:
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <strong>A</strong>
+                        </div>
+                        <div>
+                            dan <strong>batas akhir revisi</strong> adalah sampai dengan <strong>tanggal</strong>: 29
+                            Agustus 2025
+                        </div>
+                        <div class="table-responsive py-4">
+                            <table class="table table-centered table-nowrap mb-0 rounded">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th rowspan="2" style="text-align: center; vertical-align: middle">No.</th>
+                                        <th rowspan="2" style="text-align: center; vertical-align: middle">Posisi</th>
+                                        <th rowspan="2" style="text-align: center; vertical-align: middle">Nama</th>
+                                        <th colspan="3" style="text-align: center; vertical-align: middle">Nilai</th>
+                                    </tr>
+                                    <tr>
+
+                                        <th style="text-align: center; vertical-align: middle">CLO-07-2 <br> Sub-CLO 2
+                                        </th>
+
+                                        <th style="text-align: center; vertical-align: middle">CLO-12-1 <br> Sub-CLO 1
+                                        </th>
+
+                                        <th style="text-align: center; vertical-align: middle">CLO-12-2 <br> Sub-CLO 3
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center;">1</td>
+                                        <td>Pembimbing 1</td>
+                                        <td>INDRA LUKMANA SARDI, S.T., M.T.</td>
+
+                                        <td style="text-align: center;">AB</td>
+
+                                        <td style="text-align: center;">A</td>
+
+                                        <td style="text-align: center;">A</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">2</td>
+                                        <td>Pembimbing 2</td>
+                                        <td>Dr. KUSUMA AYU LAKSITOWENING, S.T., M.T.</td>
+
+                                        <td style="text-align: center;">B</td>
+
+                                        <td style="text-align: center;">A</td>
+
+                                        <td style="text-align: center;">AB</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><strong>Rata-rata pembimbing (Ra)</strong></td>
+
+                                        <td style="text-align: center;">3.25</td>
+
+                                        <td style="text-align: center;">4.00</td>
+
+                                        <td style="text-align: center;">3.75</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">3</td>
+                                        <td>Penguji 1</td>
+                                        <td>MONTERICO ADRIAN, S.T., M.T</td>
+
+                                        <td style="text-align: center;">AB</td>
+
+                                        <td style="text-align: center;">AB</td>
+
+                                        <td style="text-align: center;">A</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">4</td>
+                                        <td>Penguji 2</td>
+                                        <td>ANISA HERDIANI, S.T., M.T.</td>
+
+                                        <td style="text-align: center;">AB</td>
+
+                                        <td style="text-align: center;">AB</td>
+
+                                        <td style="text-align: center;">AB</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><strong>Rata-rata penguji (Rb)</strong></td>
+
+                                        <td style="text-align: center;">3.50</td>
+
+                                        <td style="text-align: center;">3.50</td>
+
+                                        <td style="text-align: center;">3.75</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><strong>Nilai hasil perhitungan (60%*Ra + 40%*Rb)</strong></td>
+
+                                        <td style="text-align: center;">3.35</td>
+
+                                        <td style="text-align: center;">3.80</td>
+
+                                        <td style="text-align: center;">3.75</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><strong>Nilai akhir</strong></td>
+
+                                        <td style="text-align: center;">3.35</td>
+
+                                        <td style="text-align: center;">3.80</td>
+
+                                        <td style="text-align: center;">3.75</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="mb-3">
+                            <span style="font-size: 15px;">Nilai Tugas Akhir ((CLO-07-2 x 30%) + (CLO-12-1 x 35%) +
+                                (CLO-12-2 x 35%)) = 3.65</span><br>
+                            <span style="font-size: 15px;">Indeks Tugas Akhir = A</span>
+                        </div>
+                        <div class="mb-3">
+                            <div class="table-responsive">
+                                <table class="table mb-0 rounded">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <td>Catatan Revisi</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+
+                                                <span><strong>Catatan Pembimbing 1</strong></span> <br>
+                                                <span style="white-space: pre-wrap;">-jelaskan bagaimana cara melakukan
+                                                    code splitting.. jabarkan di buku.. !
+                                                    perbaiki analisis</span> <br>
+
+
+
+                                                <span><strong>Catatan Penguji 1</strong></span> <br>
+                                                <span style="white-space: pre-wrap;">- kenapa halaman yg dipilih 5 itu,
+                                                    harus ada alasannya/justifikasi
+                                                    - perfomance itu kan ada faktor jumlah data, berikan
+                                                    alasan/justifikasi kenapa tidak ada skenario pengujian dengan jumlah
+                                                    data berbeda
+                                                    - di Saran, jangan ada sesuatu yg sebenarnya bisa kamu kerjakan
+                                                    ketika melakukan penelitian. mungkin diletakkan di batasan, dengan
+                                                    justifikasi
+                                                    - tambahkan analisis kenapa metrik CLS malah menurun perfomance nya,
+                                                    padahal metrik lain menaik</span> <br>
+
+
+                                                <span><strong>Catatan Penguji 2</strong></span> <br>
+                                                <span style="white-space: pre-wrap;">1. Jelaskan landasan pemilihan case
+                                                    study, terkait dengan karakteristik permasalahan (banyak fitur dan
+                                                    dependency)
+                                                    2. SIlakan ditambahkan flowchart terkait bagaimana menerapkan code
+                                                    splitting dan lazy load </span> <br>
+
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+
+
+
+        <footer class="bg-white rounded shadow p-5 mb-4 mt-4">
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-6 mb-4 mb-md-0">
+                    <p class="mb-0 text-center text-lg-start">
+                        &copy; Developed by IKN
+                    </p>
+                </div>
+                <!-- <div class="col-12 col-md-8 col-xl-6 text-center text-lg-start"> -->
+                <!-- List -->
+                <!-- <ul class="list-inline list-group-flush list-group-borderless text-md-end mb-0">
+                            <li class="list-inline-item px-0 px-sm-2">
+                                <a target="_blank" href="https://appseed.us/admin-dashboards/flask-dashboard-volt-pro">Flask Dashboard Volt PRO</a>
+                            </li>
+                        </ul>
+                    </div> -->
+            </div>
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- Core Libs -->
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/@popperjs/core/dist/umd/popper.min.js">
+    </script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/bootstrap/dist/js/bootstrap.min.js">
+    </script>
+
+    <!-- Plugins -->
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/onscreen/dist/on-screen.umd.min.js">
+    </script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/nouislider/distribute/nouislider.min.js">
+    </script>
+    <script
+        src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js">
+    </script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/countup.js/dist/countUp.umd.js"></script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/apexcharts/dist/apexcharts.min.js">
+    </script>
+    <script
+        src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/vanillajs-datepicker/dist/js/datepicker.min.js">
+    </script>
+    <script
+        src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/simple-datatables/dist/umd/simple-datatables.js">
+    </script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/sweetalert2/dist/sweetalert2.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script
+        src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/vanillajs-datepicker/dist/js/datepicker.min.js">
+    </script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/fullcalendar/main.min.js"></script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/dropzone/dist/min/dropzone.min.js">
+    </script>
+    <script
+        src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/choices.js/public/assets/scripts/choices.min.js">
+    </script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/notyf/notyf.min.js"></script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/leaflet/dist/leaflet.js"></script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/svg-pan-zoom/dist/svg-pan-zoom.min.js">
+    </script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/svgmap/dist/svgMap.min.js"></script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/vendor/sortablejs/Sortable.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Volt JS -->
+    <script src="https://apps-soc.telkomuniversity.ac.id/static/assets/js/volt.js"></script>
+    <!-- Specific Page JS goes HERE  -->
+
+
+    // <script defer //
+        src="https:/https://apps-soc.telkomuniversity.ac.id/static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" //
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" //
+        data-cf-beacon='{"version":"2024.11.0","token":"5613f381e16b4e2d98bbb338537f090e","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' //
+        crossorigin="anonymous"></script>
+    // <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(() => console.log('Service worker registered'))
+                .catch(err => console.error('SW registration failed:', err));
+        }
+    </script>
+
+</body>
+
+</html>
