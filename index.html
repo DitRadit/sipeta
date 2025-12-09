@@ -920,7 +920,7 @@
         crossorigin="anonymous"></script>
     // <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
+            navigator.serviceWorker.register('https://ditradit.github.io/sipeta/service-worker.js')
                 .then(() => console.log('Service worker registered'))
                 .catch(err => console.error('SW registration failed:', err));
         }
