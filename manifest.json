@@ -2,7 +2,7 @@
   "name": "PWA Sipeta",
   "short_name": "Sipeta",
   "description": "Website PWA Sipeta",
-  "start_url": "/?home=true",
+  "start_url": "./index.html",
   "display": "fullscreen",
   "background_color": "#000000",
   "theme_color": "#ffffff",
